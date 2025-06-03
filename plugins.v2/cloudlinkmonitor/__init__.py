@@ -1,4 +1,4 @@
-import datetime
+﻿import datetime
 import re
 import shutil
 import threading
@@ -154,7 +154,7 @@ class CloudLinkMonitor(_PluginBase):
                 # 追加入库消息统一发送服务
                 self._scheduler.add_job(self.send_msg, trigger='interval', seconds=15)
 
-            # 添加每分钟执行一次的任务
+             # 添加每分钟执行一次的任务
             self._scheduler.add_job(self.sync_all, trigger='interval', minutes=1)
 
             # 读取目录配置
