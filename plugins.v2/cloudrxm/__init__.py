@@ -57,13 +57,13 @@ class FileMonitorHandler(FileSystemEventHandler):
 
 class CloudLinkMonitor(_PluginBase):
     # 插件名称
-    plugin_name = "目录实时监控"
+    plugin_name = "目录实时监控RXM"
     # 插件描述
     plugin_desc = "监控目录文件变化，自动转移媒体文件。"
     # 插件图标
     plugin_icon = "Linkease_A.png"
     # 插件版本
-    plugin_version = "2.5.8"
+    plugin_version = "2.5.9"
     # 插件作者
     plugin_author = "thsrite"
     # 作者主页
