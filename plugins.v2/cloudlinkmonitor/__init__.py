@@ -155,7 +155,7 @@ class CloudLinkMonitor(_PluginBase):
                 self._scheduler.add_job(self.send_msg, trigger='interval', seconds=15)
 
             # 添加每分钟执行一次的任务
-           self._scheduler.add_job(self.sync_all, trigger='interval', minutes=15)
+            self._scheduler.add_job(self.sync_all, trigger='interval', minutes=1)
 
             # 读取目录配置
             monitor_dirs = self._monitor_dirs.split("\n")
